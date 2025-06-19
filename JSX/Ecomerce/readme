@@ -1,0 +1,102 @@
+// import React, { useState } from "react";
+// import Product from "./Product"; // renamed from Products for clarity
+// import { productList } from "../../utils/constaint";
+
+// function ProductSection() {
+//   const [searchTerm, setSearchTerm] = useState("");
+//   const [filterBy, setFilterBy] = useState("all"); // all, profession, country
+//   const [filterValue, setFilterValue] = useState("");
+
+//   // Get unique professions and countries from productList for dropdown options
+//   const professions = [...new Set(productList.map(p => p.profession))];
+//   const countries = [...new Set(productList.map(p => p.country))];
+
+//   // Filtering logic
+//   const filteredProducts = productList.filter(product => {
+//     // Search by title (case-insensitive)
+//     const matchesSearch = product.title.toLowerCase().includes(searchTerm.toLowerCase());
+
+//     // Filter by profession or country if selected
+//     if (filterBy === "profession" && filterValue) {
+//       return matchesSearch && product.profession === filterValue;
+//     } else if (filterBy === "country" && filterValue) {
+//       return matchesSearch && product.country === filterValue;
+//     }
+
+//     // Default: only search filter applies
+//     return matchesSearch;
+//   });
+
+//   return (
+//     <div className="product-section">
+//       {/* Search input */}
+//       <input
+//         type="text"
+//         placeholder="Search by name..."
+//         value={searchTerm}
+//         onChange={e => setSearchTerm(e.target.value)}
+//         style={{ marginBottom: "1rem", padding: "0.5rem", width: "200px" }}
+//       />
+
+//       {/* Filter selector */}
+//       <select
+//         value={filterBy}
+//         onChange={e => {
+//           setFilterBy(e.target.value);
+//           setFilterValue(""); // reset filter value when filter type changes
+//         }}
+//         style={{ marginLeft: "1rem", padding: "0.5rem" }}
+//       >
+//         <option value="all">No filter</option>
+//         <option value="profession">Profession</option>
+//         <option value="country">Country</option>
+//       </select>
+
+//       {/* Filter value dropdown */}
+//       {(filterBy === "profession" || filterBy === "country") && (
+//         <select
+//           value={filterValue}
+//           onChange={e => setFilterValue(e.target.value)}
+//           style={{ marginLeft: "1rem", padding: "0.5rem" }}
+//         >
+//           <option value="">Select {filterBy}</option>
+//           {(filterBy === "profession" ? professions : countries).map((val, idx) => (
+//             <option key={idx} value={val}>
+//               {val}
+//             </option>
+//           ))}
+//         </select>
+//       )}
+
+//       {/* Products list */}
+//       <div style={{ marginTop: "1rem", display: "flex", flexWrap: "wrap", gap: "1rem" }}>
+//         {filteredProducts.length > 0 ? (
+//           filteredProducts.map(product => (
+//             <Product key={product.id} productDetails={product} />
+//           ))
+//         ) : (
+//           <p>No results found</p>
+//         )}
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default ProductSection;
+
+
+
+// // CSS SECTION
+// .product-section {
+//   padding: 20px;
+// }
+
+// .product-container {
+//   width: 200px;
+//   border: 1px solid #ddd;
+//   border-radius: 8px;
+//   overflow: hidden;
+//   text-align: center;
+//   background-color: #f9f9f9;
+//   padding: 10px;
+// }
