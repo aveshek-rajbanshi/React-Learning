@@ -1,5 +1,5 @@
 function Products ({productDetails}){
-  const {title, profession, country, profileImg} = productDetails;
+  const {title, profession, country, rating, profileImg} = productDetails;
   console.log(title);
     return (
        <div className="product-container">
@@ -8,7 +8,7 @@ function Products ({productDetails}){
        </div>
          <div className="product-details">
             <h3>{title}</h3>
-            <h5>{profession}</h5>
+            <h5>{profession} | {rating}</h5>
             <h5>{country}</h5>
          </div>
 
