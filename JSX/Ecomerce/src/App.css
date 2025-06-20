@@ -5,10 +5,27 @@
 }
 
 html,body{
-    height: 100%;
     width: 100%;
     color: #000;
 }
+
+.main{ 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100vw;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.main.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.main.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
 
 /* NAVBAR SECTION */
 
@@ -28,13 +45,26 @@ html,body{
     letter-spacing: -0.2px;
     color: #3232d4;
 }
+.menu-container{
+    width: 22vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 12px;
+}
 .menu-list{
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 25px;
 }
-.menu-list h4{
+.mode-theme{
+    width: 15%;
+    padding: 5px;
+}
+.menu-list h4, .mode-theme{
+    cursor: pointer;
     font-family: "Poppins";
     font-weight: 480;
     font-size: 16px;
@@ -43,20 +73,20 @@ html,body{
 /* PRODUCT SECTION */
 
 .product-section{
+    flex: 1;
     position: relative;
-    height: 88vh;
     width: 100vw;
     padding: 0.8% 9%;
+    margin-bottom: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: flex-start;
     gap: 30px;
-    /* background-color: red; */
 }
 .toprate{
     position: relative;
-    padding: 0 9%;
+    padding: 0.3% 9%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -81,9 +111,9 @@ html,body{
     flex-direction: column;
     transition: all 0.5s ease;
 }
-.product-container:hover{
-    background-color: #c9c9f4;
-}
+/* .product-container:hover{
+    background-color: #5454d8;
+} */
 .img-container{
     height: 280px;
     width: 220px;
@@ -112,5 +142,22 @@ html,body{
 .product-details h5{
     font-size: 14px;
     font-weight: 580;
-    color: #595959;
+    color: #727272;
+}
+
+/* FOOTER SECTION */
+
+.footer-container{
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2; /* Optional */
+}
+.footer-container p{
+    font-family: "Poppins";
+    font-weight: 540;
+    font-size: 14px;
+    color: #3232d4;
 }

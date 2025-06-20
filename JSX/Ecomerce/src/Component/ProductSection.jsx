@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Products from "./product";
+import Footer from "./Footer";
 import { productList } from "../../utils/constaint";
 
 function ProductSection (){
@@ -29,6 +30,7 @@ function ProductSection (){
              })
           }
         </div>
+      {/* <Footer /> */}
       </div>
     );
 }

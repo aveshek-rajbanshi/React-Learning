@@ -118,6 +118,62 @@ export const productList = [
     country: "South Africa",
     rating: 4.8,
     profileImg: "https://images.unsplash.com/photo-1613381741586-dd07826edc19?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+},
+{
+    id: 16,
+    title: "Taylor Swift",
+    profession: "Cardiologist",
+    country: "Nepal",
+    rating: 5.0,
+    profileImg: "https://img.echo-online.de/panorama/aus-aller-welt/ytwspv-taylor-swift/alternates/LANDSCAPE_480/taylor%20swift.webp"
+},
+{
+    id: 17,
+    title: "Narendra Modi ",
+    profession: "Software Engineer",
+    country: "Australia",
+    rating: 4.3,
+    profileImg: "https://www.thesrkblogs.in/wp-content/uploads/2023/07/Narendra-Modi-new.jpg"
+},
+{
+    id: 18,
+    title: "Tenzing Norgay",
+    profession: "Fashion Designer",
+    country: "Japan",
+    rating: 4.5,
+    profileImg: "https://images.unsplash.com/photo-1600566977838-58ca846e9eb2?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+},
+{
+    id: 19,
+    title: "Elon Musk",
+    profession: "University Lecture",
+    country: "South Korea",
+    rating: 4.8,
+    profileImg: "https://wallpapercave.com/wp/wp5227351.jpg"
+},
+{
+    id: 20,
+    title: "Naomi Osaka",
+    profession: "Chef",
+    country: "Thailand",
+    rating: 3.6,
+    profileImg: "https://images.unsplash.com/photo-1748363481094-02b9353faf54?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+},
+{
+    id: 21,
+    title: "Angela Merkel",
+    profession: "Travel Blogger",
+    country: "Bangkok",
+    rating: 2.5,
+    profileImg: "https://images.unsplash.com/photo-1747998102459-4462c66169b0?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+},
+{
+    id: 22,
+    title: "Greta Thunberg",
+    profession: "Graphic Designer",
+    country: "Canada",
+    rating: 3.9,
+    profileImg: "https://images.unsplash.com/photo-1719664026469-e9111a4f79e4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 }
 
 ];
